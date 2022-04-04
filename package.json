@@ -1,0 +1,30 @@
+{
+  "name": "mirebi",
+  "version": "0.1.0",
+  "description": "My Homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/main.jsx --bundle --minify --outfile=release/main.js",
+    "start": "esbuild --bundle src/main.jsx --outfile=release/main.js --servedir=release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feroxide54/feroxide54.github.io.git"
+  },
+  "author": "komorebi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feroxide54/feroxide54.github.io/issues"
+  },
+  "homepage": "https://github.com/feroxide54/feroxide54.github.io#readme",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "three": "^0.139.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.30"
+  }
+}
